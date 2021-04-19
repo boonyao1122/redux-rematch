@@ -1,22 +1,22 @@
 export type User = {
-  id: string
   name: {
-    first: string
-    last: string
-  }
-  picture: {
-    thumbnail: string
-  }
+    first: string;
+    last: string;
+  };
   location: {
-    street: string
-    state: string
-    city: string
-    postcode: number
-  }
-  isFollowing: boolean
-}
+    street: any;
+    city: string;
+    state: string;
+    postcode: string | number;
+  };
+  id: string;
+  picture: {
+    thumbnail: string;
+  };
+  isFollowing: boolean;
+};
 
 export type Toast = {
-  id: number
-  message: string
-}
+  id: number;
+  message: string;
+};
