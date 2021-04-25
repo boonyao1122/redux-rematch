@@ -2,7 +2,6 @@ import React, { useEffect, FC } from "react";
 import { connect } from "react-redux";
 import UserList from "../../components/UserList";
 import { RootState, RootDispatch } from "../../store";
-import allUser from "../../common/users";
 
 type UserProps = ReturnType<typeof mapProps> & ReturnType<typeof mapDispatch>;
 

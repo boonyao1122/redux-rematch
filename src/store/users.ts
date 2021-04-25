@@ -21,7 +21,7 @@ const model = {
       const users = await loadUsers();
       dispatch.users.loaded(users);
     },
-    toggleFollow(user: User) {
+    toggleFollow(user: any) {
       dispatch.users.followToggled(user);
       dispatch.toasts.add(
         `You ${user.isFollowing ? "unfollowed" : "followed"} ${
